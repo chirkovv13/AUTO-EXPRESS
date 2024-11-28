@@ -9,8 +9,8 @@
   "author": "CHIRKOVV ARTEM",
   "license": "ISC",
   "devDependencies": {
-    "@babel/core": "^7.26.0",
-    "@babel/preset-env": "^7.26.0",
+    "@babel/core": "^7.23.9",
+    "@babel/preset-env": "^7.23.9",
     "@fancyapps/fancybox": "^3.5.7",
     "browser-sync": "^2.29.3",
     "del": "^6.1.1",
@@ -39,7 +39,7 @@
     "jquery": "^3.7.1",
     "jquery-form-styler": "^2.0.2",
     "rateyo": "^2.3.5",
-    "sass": "^1.81.0",
+    "sass": "^1.70.0",
     "slick-carousel": "^1.8.1"
   }
 }

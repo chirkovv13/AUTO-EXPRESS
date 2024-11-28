@@ -12,9 +12,9 @@ const newer          = require('gulp-newer');                          //Иск�
 const size           = require('gulp-size');                           //Размер файлов
 const imagemin       = require('gulp-imagemin');                       //Оптимизация изображений
 const svg            = require('gulp-svg-sprite');                     //Собирает и оптимизирует svg, преобразует в svg-sprite
-const webp           = require('gulp-webp');                           //Конвертирует изображения в WebP
-const webpHtml       = require('gulp-webp-html');                      //Преобразует img в picture для webP
-const webpCss        = require('gulp-webp-css');                       //Добавляет класс и свойства в css для webP
+// const webp           = require('gulp-webp');                           //Конвертирует изображения в WebP
+// const webpHtml       = require('gulp-webp-html');                      //Преобразует img в picture для webP
+// const webpCss        = require('gulp-webp-css');                       //Добавляет класс и свойства в css для webP
 const fileInclude    = require('gulp-file-include');                   //Модульность html
 const htmlmin        = require('gulp-htmlmin');                        //Минификация Html
 const rename         = require('gulp-rename');                         //Переименование
@@ -66,7 +66,7 @@ const path           = {
     src:     pathSrc + "/images/**/*.{png,jpg,jpeg,gif}",
     app:     pathSrc + "/images",
     watch:   pathSrc + "/images/**/*.{png,jpg,jpeg,gif}",
-    webp:    pathSrc + "/images/**/*.webp",
+    // webp:    pathSrc + "/images/**/*.webp",
     sprite:  pathSrc + "/images/sprite.svg",
     svg:    [pathSrc + "/images/**/*.svg", "!app/images/sprite.svg"],
     // svg:    [pathSrc + "/images/icon/*.svg", "!app/images/sprite.svg"],
@@ -89,7 +89,8 @@ function watching() {
   watch(path.html.watch, series(html)).on('change', browserSync.reload);
   watch(path.css.watch, styles);
   watch(path.js.watch, scripts);
-  watch(path.img.watch, series(cleanWebp, imagesApp, html));
+  // watch(path.img.watch, series(cleanWebp, imagesApp, html));
+  watch(path.img.watch, series(imagesApp, html));
   watch(path.img.svg, series(cleanSprite, svgSprite, html));
 }
 
@@ -110,7 +111,7 @@ function html() {
       message: error.message
     }))
   }))
-  .pipe(webpHtml())
+  // .pipe(webpHtml())
   .pipe(fileInclude())
   .pipe(htmlmin({
     collapseWhitespace: true
@@ -131,7 +132,7 @@ function styles() {
     }))
   }))
   .pipe(sourcemaps.init())
-  .pipe(webpCss())
+  // .pipe(webpCss())
   .pipe(scss({outputStyle: 'expanded'}))
   // .pipe(dest(path.css.app, {sourcemaps: true}))
   .pipe(dest(path.css.app))
@@ -175,13 +176,14 @@ function imagesApp() {
       message: error.message
     }))
   }))
-  .pipe(webp())
+  // .pipe(webp())
   .pipe(dest(path.img.app, {base: path.img.app}))
   .pipe(browserSync.stream());
 }
 
 function imagesDist() {
-  return src([path.img.src, path.img.webp])
+  // return src([path.img.src, path.img.webp])
+  return src(path.img.src)
   .pipe(plumber({
     errorHandler: notify.onError(error => ({
       title: 'Images',
@@ -246,9 +248,9 @@ function cleanHtml() {
 }
 
 //Очистка директории images от webp
-function cleanWebp() {
-  return del(path.img.webp)
-}
+// function cleanWebp() {
+  // return del(path.img.webp)
+// }
 
 //Очистка директории images от Sprite
 function cleanSprite() {
@@ -274,8 +276,12 @@ exports.server      = server;
 exports.watching    = watching;
 exports.font        = font;
 exports.cleanDist   = cleanDist;
-exports.cleanWebp   = cleanWebp;
+// exports.cleanWebp   = cleanWebp;
 exports.buildDist   = buildDist;
 
-exports.build       = series(cleanDist, cleanHtml, font, html, cleanWebp, imagesApp, buildDist, imagesDist);
+// exports.build       = series(cleanDist, cleanHtml, font, html, cleanWebp, imagesApp, buildDist, imagesDist);
+exports.build       = series(cleanDist, cleanHtml, font, html, imagesApp, buildDist, imagesDist);
 exports.default     = series(html, styles, font, imagesApp, svgSprite, parallel(scripts, server, watching));
+
+
+// убрано все, что связано с webp
