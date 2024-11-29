@@ -1,4 +1,4 @@
-@use 'config/vars' as *;
+@use "config/vars" as *;
 
 html,
 body {
@@ -12,7 +12,7 @@ body {
   margin: 0 auto;
   @extend %oswald-300;
   font-size: 18px;
-  line-height: 1.4;
+  line-height: 1.2;
   letter-spacing: normal;
   color: $default;
 }
@@ -27,26 +27,24 @@ body {
   padding: 0 15px;
 }
 
-// .logo {
-  // display: flex;
-  // justify-content: center;
-  // align-items: center;
-  // max-width: 185px;
-  // width: 100%;
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 197px;
+  width: 100%;
+  height: 53px;
 
-  // img {
-    // width: 100%;
-    // height: 30px;
-    // object-fit: contain;
-  // }
-// }
+  &__img { 
+    object-fit: contain;
+  }
+}
 
 .title {
   font-size: 36px;
   @extend %oswald-400;
   text-transform: uppercase;
-  // text-align: center;
-  color: $default
+  color: $default;
 }
 
 .subtitle {
@@ -56,7 +54,7 @@ body {
 }
 
 .btn {
-  // display: inline-block;
+  display: block;
   max-width: 250px;
   width: 100%;
   padding: 15px 0;
@@ -68,9 +66,26 @@ body {
   color: $white;
   background-color: $accent;
   overflow: hidden;
+  transition: color 0.3s, background-color 0.3s;
 
-  :hover {
+  &:hover {
     color: $accent;
     background-color: $white;
+  }
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__item:not(:last-child) {
+    margin-right: 10px;
+  }
+
+  &__link {
+  }
+
+  &__img {
   }
 }
