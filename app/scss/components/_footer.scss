@@ -1,0 +1,22 @@
+@use "config/vars" as *;
+
+.footer {
+  background-color: $bg;
+
+  &__box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 0;
+  }
+
+  &__logo {
+  }
+
+  &__social {
+  }
+
+  &__text {
+    color: $white;
+  }
+}
