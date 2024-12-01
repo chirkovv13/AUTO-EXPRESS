@@ -1,6 +1,7 @@
 @use "config/vars" as *;
 
 .about {
+  margin-bottom: 110px;
   &__wrapper {
     display: flex;
   }

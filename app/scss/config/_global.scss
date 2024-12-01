@@ -51,8 +51,8 @@ body {
   &--line::after { 
     content: '';
     position: absolute;
-    top: 50%;
-    right: -95px;
+    top: 41%;
+    right: -100px;
     width: 80px;
     height: 3px;
     background-color: $bg;
