@@ -5,6 +5,8 @@
 @use 'config/libs';
 
 @use 'components/header';
+@use 'index/services';
+@use 'index/about';
 @use 'components/footer';
 
 // @use 'pages/index/top-slider';
