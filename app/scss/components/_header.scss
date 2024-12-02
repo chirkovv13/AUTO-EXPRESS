@@ -3,9 +3,10 @@
 .header {
   position: relative;
   min-height: 700px;
-  background-position: top center;
-  background-color: $bg;
   margin-bottom: 200px;
+  background-color: $bg;
+  background-position: center center;
+  background-size: cover;
 
   &__top {
     display: flex;

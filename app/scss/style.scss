@@ -1,19 +1,21 @@
-@use 'config/fonts';
-@use 'config/reset';
-@use 'config/vars';
-@use 'config/global';
-@use 'config/libs';
+@use 'config/_fonts';
+@use 'config/_reset';
+@use 'config/_vars';
+@use 'config/_global';
+@use 'config/_libs';
 
-@use 'components/header';
-@use 'index/services';
-@use 'index/about';
-@use 'components/footer';
+@use 'components/_header';
+@use 'index/_services';
+@use 'index/_about';
+@use 'index/_slider';
+@use 'index/_contacts';
+@use 'components/_footer';
 
 // @use 'pages/index/top-slider';
 
-@use 'layout/media-1400px';
-@use 'layout/media-1200px';
-@use 'layout/media-992px';
-@use 'layout/media-768px';
-@use 'layout/media-576px';
-@use 'layout/media-440px';
+@use 'layout/_media-1400px';
+@use 'layout/_media-1200px';
+@use 'layout/_media-992px';
+@use 'layout/_media-768px';
+@use 'layout/_media-576px';
+@use 'layout/_media-440px';
