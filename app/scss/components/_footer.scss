@@ -16,7 +16,14 @@
   &__social {
   }
 
-  &__text {
+  &__link {
+    padding: 5px 0;
     color: $white;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.3s;
+
+    &:hover {
+      border-bottom: 1px solid $white;
+    }
   }
 }

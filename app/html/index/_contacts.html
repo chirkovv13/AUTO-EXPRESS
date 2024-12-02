@@ -6,8 +6,10 @@
         <ul class="contacts__list">
           <li class="contacts__item">
             <div class="contacts__subtitle">Адрес</div>
-            <div class="contacts__text">Киев, Подол</div>
-            <div class="contacts__text">ул. Константиновская, д.71</div>
+            <a class="contacts__adress" href="#">
+              Киев, Подол </br>
+              ул. Константиновская, д.71
+            </a>
           </li>
           <li class="contacts__item">
             <div class="contacts__subtitle">Время работы</div>
@@ -16,7 +18,7 @@
           </li>
           <li class="contacts__item">
             <div class="contacts__subtitle">Телефон</div>
-            <a class="contacts__phone" href="tel:+380505556677"
+            <a class="contacts__phone phone" href="tel:+380505556677"
               >+38 (050) 555 66 77
             </a>
           </li>
@@ -33,6 +35,8 @@
               placeholder="Как Вас зовут?"
               required
             />
+          </label>
+            <label class="contacts__label">
             <input
               class="contacts__input"
               type="tel"
