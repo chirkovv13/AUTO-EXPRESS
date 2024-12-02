@@ -6,7 +6,7 @@ $(function () {
     arrows: false,
     centerMode: true,
     centerPadding: '0px',
-    autoplay: true,
+    // autoplay: true,
     autoplaySpeed: 3000,
     pauseOnHover: true,
   });
