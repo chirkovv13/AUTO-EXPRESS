@@ -1,1 +1,114 @@
-@media (max-width: 1400px) {}
+@media (max-width: 1400px) {
+  .header {
+    margin-bottom: 100px;
+
+    &__img {
+      right: 25px;
+      bottom: -100px;
+      max-height: 400px;
+    }
+  }
+  .about {
+    &__wrapper {
+    }
+
+    &__img {
+    }
+
+    &__box {
+    }
+
+    &__title {
+    }
+
+    &__list {
+    }
+
+    &__item {
+    }
+
+    &__value {
+    }
+
+    &__subtitle {
+    }
+
+    &__text {
+    }
+  }
+  .slider {
+    &__title {
+    }
+
+    &__list {
+    }
+
+    &__item {
+    }
+
+    &__img {
+    }
+
+    &__name {
+    }
+
+    &__sale {
+    }
+  }
+  .contacts {
+    &__wrapper {
+    }
+
+    &__blog {
+    }
+
+    &__title {
+    }
+
+    &__list {
+    }
+
+    &__item {
+    }
+
+    &__subtitle {
+    }
+
+    &__adress {
+    }
+
+    &__text {
+    }
+
+    &__phone {
+    }
+
+    &__application {
+    }
+
+    &__form {
+    }
+
+    &__label {
+    }
+
+    &__input {
+    }
+
+    &__btn {
+    }
+  }
+  .footer {
+    &__box {
+    }
+
+    &__logo {
+    }
+
+    &__social {
+    }
+
+    &__link {
+    }
+  }
+}

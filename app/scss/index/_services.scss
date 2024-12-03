@@ -42,7 +42,7 @@
     display: flex;
     align-items: center;
     max-width: 450px;
-    height: 70px;
+    min-height: 70px;
     border: 2px solid $default-light;
     transition: all 0.3s;
 
