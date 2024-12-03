@@ -17,7 +17,7 @@ lintCss что то надо написать в галпфайл
 
 
 * svgSprite не работает на предпродакшене
-* добавить sr-only для кнопок, ссылок:
+* добавить sr-only для кнопок, ссылок которые не понятны без описания:
                 <span class="sr-only">search</span>
 * добавить sr-only дял form без описания:
                 <label class="footer__top-label">
