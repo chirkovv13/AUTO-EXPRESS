@@ -85,10 +85,13 @@
     }
   }
   .about {
+    margin-bottom: 50px;
+    
     &__wrapper {
     }
 
     &__img {
+      display: none;
     }
 
     &__box {

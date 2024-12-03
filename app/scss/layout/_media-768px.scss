@@ -81,31 +81,47 @@
     }
   }
   .about {
+    margin-bottom: 75px;
+
     &__wrapper {
+      flex-direction: column-reverse;
+      align-items: center;
+      gap: 20px;
     }
 
     &__img {
+      max-width: 200px;
+      margin: 0;
     }
 
     &__box {
     }
 
     &__title {
+      margin-bottom: 25px;
+      padding: 0;
     }
 
     &__list {
+      padding: 25px;
     }
 
     &__item {
+      max-width: 100%;
     }
 
     &__value {
+      display: inline-block;
+      font-size: 22px;
     }
 
     &__subtitle {
+      display: inline-block;
+      font-size: 22px;
     }
 
     &__text {
+      margin-bottom: 10px;
     }
   }
   .slider {

@@ -32,27 +32,33 @@
     }
 
     &__img {
+      max-width: 250px;
+      margin-right: 30px;
     }
 
     &__box {
     }
 
     &__title {
+      padding-left: 75px;
     }
 
     &__list {
+      padding-left: 75px;
     }
 
     &__item {
     }
 
     &__value {
+      font-size: 30px;
     }
 
     &__subtitle {
     }
 
     &__text {
+      margin-bottom: 20px;
     }
   }
   .slider {

@@ -55,10 +55,13 @@
     }
   }
   .about {
+    margin-bottom: 60px;
+
     &__wrapper {
     }
 
     &__img {
+      max-width: 150px;
     }
 
     &__box {
@@ -74,9 +77,11 @@
     }
 
     &__value {
+      font-size: 20px;
     }
 
     &__subtitle {
+      font-size: 20px;
     }
 
     &__text {
