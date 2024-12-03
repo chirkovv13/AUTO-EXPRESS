@@ -8,51 +8,12 @@
       max-height: 400px;
     }
   }
-  .about {
-    &__wrapper {
-    }
-
-    &__img {
-    }
-
-    &__box {
-    }
-
-    &__title {
-    }
-
-    &__list {
-    }
-
-    &__item {
-    }
-
-    &__value {
-    }
-
-    &__subtitle {
-    }
-
-    &__text {
-    }
-  }
   .slider {
-    &__title {
-    }
-
     &__list {
-    }
-
-    &__item {
-    }
-
-    &__img {
-    }
-
-    &__name {
-    }
-
-    &__sale {
+      .slick-track {
+        display: flex;
+        gap: 10px;
+      }
     }
   }
   .contacts {

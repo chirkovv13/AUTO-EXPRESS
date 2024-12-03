@@ -28,15 +28,10 @@
     }
   }
   .about {
-    &__wrapper {
-    }
 
     &__img {
       max-width: 250px;
       margin-right: 30px;
-    }
-
-    &__box {
     }
 
     &__title {
@@ -47,14 +42,8 @@
       padding-left: 75px;
     }
 
-    &__item {
-    }
-
     &__value {
       font-size: 30px;
-    }
-
-    &__subtitle {
     }
 
     &__text {
@@ -62,22 +51,38 @@
     }
   }
   .slider {
+    margin-bottom: 75px;
+
     &__title {
+      margin-bottom: 25px;
     }
 
     &__list {
+      padding-bottom: 30px;
+
+      .slick-track {
+        display: flex;
+        gap: 5px;
+      }
     }
 
     &__item {
+      margin: auto;
+      padding: 0;
     }
 
     &__img {
+      max-width: none;
     }
 
     &__name {
+      padding: 0 5px;
+      text-align: center;
     }
 
     &__sale {
+      padding: 0 5px;
+      text-align: center;
     }
   }
   .contacts {

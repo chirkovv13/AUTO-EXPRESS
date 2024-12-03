@@ -13,7 +13,7 @@
       top: 50%;
       right: -55px;
       width: 50px;
-      height: 1px;
+      height: 2px;
     }
   }
 
@@ -94,9 +94,6 @@
       margin: 0;
     }
 
-    &__box {
-    }
-
     &__title {
       margin-bottom: 25px;
       padding: 0;
@@ -125,22 +122,17 @@
     }
   }
   .slider {
-    &__title {
-    }
 
     &__list {
+      margin-bottom: 50px;
     }
 
     &__item {
+      font-size: 14px;
     }
 
     &__img {
-    }
-
-    &__name {
-    }
-
-    &__sale {
+      margin-bottom: 15px;
     }
   }
   .contacts {

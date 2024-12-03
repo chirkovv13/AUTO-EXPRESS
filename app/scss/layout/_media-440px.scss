@@ -86,52 +86,20 @@
   }
   .about {
     margin-bottom: 50px;
-    
-    &__wrapper {
-    }
 
     &__img {
       display: none;
     }
-
-    &__box {
-    }
-
-    &__title {
-    }
-
-    &__list {
-    }
-
-    &__item {
-    }
-
-    &__value {
-    }
-
-    &__subtitle {
-    }
-
-    &__text {
-    }
   }
   .slider {
-    &__title {
-    }
+    margin-bottom: 50px;
 
     &__list {
+      margin-bottom: 0;
     }
 
     &__item {
-    }
-
-    &__img {
-    }
-
-    &__name {
-    }
-
-    &__sale {
+      max-width: 100%;
     }
   }
   .contacts {

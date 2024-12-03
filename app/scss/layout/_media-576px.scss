@@ -57,23 +57,8 @@
   .about {
     margin-bottom: 60px;
 
-    &__wrapper {
-    }
-
     &__img {
       max-width: 150px;
-    }
-
-    &__box {
-    }
-
-    &__title {
-    }
-
-    &__list {
-    }
-
-    &__item {
     }
 
     &__value {
@@ -83,27 +68,14 @@
     &__subtitle {
       font-size: 20px;
     }
-
-    &__text {
-    }
   }
   .slider {
-    &__title {
-    }
+    margin-bottom: 60px;
 
     &__list {
-    }
-
-    &__item {
-    }
-
-    &__img {
-    }
-
-    &__name {
-    }
-
-    &__sale {
+      .slick-dots button {
+        width: 25px;
+      }
     }
   }
   .contacts {
