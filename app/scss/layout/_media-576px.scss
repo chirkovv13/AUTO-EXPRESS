@@ -1,1 +1,70 @@
-@media (max-width: 576px) {}
+@media (max-width: 576px) {
+  body {
+    font-size: 14px;
+  }
+  .header {
+    &__top {
+    }
+
+    &__logo {
+    }
+
+    &__top-phone {
+      font-size: 18px;
+    }
+
+    &__bottom {
+    }
+
+    &__title {
+      font-size: 36px;
+    }
+
+    &__decr {
+      font-size: 18px;
+    }
+
+    &__text {
+    }
+
+    &__btn {
+    }
+
+    &__social {
+    }
+
+    &__img {
+      bottom: -50px;
+      max-height: 175px;
+    }
+  }
+  .container {
+  }
+  .logo {
+    max-width: 130px;
+
+    &__link {
+    }
+
+    &__img {
+    }
+  }
+  .sr-only {
+  }
+  .phone {
+  }
+  .title {
+  }
+  .btn {
+  }
+  .social {
+    &__item {
+    }
+
+    &__link {
+    }
+
+    &__img {
+    }
+  }
+}

@@ -1,1 +1,19 @@
-@media (max-width: 1200px) {}
+@media (max-width: 1200px) {
+  .header {
+    &__top-phone {
+      font-size: 30px;
+    }
+
+    &__title {
+      font-size: 60px;
+    }
+
+    &__decr {
+      font-size: 30px;
+    }
+
+    &__btn {
+      margin-bottom: 40px;
+    }
+  }
+}

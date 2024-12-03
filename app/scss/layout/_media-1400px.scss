@@ -1,1 +1,9 @@
-@media (max-width: 1400px) {}
+@media (max-width: 1400px) {
+  .header {
+    &__img {
+      right: 25px;
+      bottom: -100px;
+      max-height: 400px;
+    }
+  }
+}
