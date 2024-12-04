@@ -3,7 +3,9 @@
     font-size: 16px;
   }
   .logo {
-    max-width: 170px;
+    &__img {
+      max-width: 170px;
+    }
   }
   .title {
     font-size: 24px;
@@ -154,7 +156,9 @@
     }
 
     &__logo {
-      max-width: 150px;
+      .logo__img {
+        max-width: 150px;
+      }
     }
   }
 }

@@ -1,6 +1,8 @@
 @media (max-width: 440px) {
   .logo {
-    max-width: 110px;
+    &__img {
+      max-width: 110px;
+    }
   }
   .title {
     font-size: 20px;
@@ -16,10 +18,6 @@
     margin-bottom: 50px;
     min-height: auto;
 
-    &__top {
-      margin-bottom: 15px;
-    }
-
     &__top-phone {
       font-size: 16px;
     }
@@ -28,6 +26,7 @@
       display: flex;
       flex-direction: column;
       align-items: center;
+      gap: 15px;
     }
 
     &__title {
@@ -40,10 +39,6 @@
 
     &__text {
       text-align: center;
-    }
-
-    &__btn {
-      margin-bottom: 20px;
     }
 
     &__social {
