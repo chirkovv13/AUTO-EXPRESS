@@ -135,52 +135,26 @@
     }
   }
   .contacts {
-    &__wrapper {
-    }
-
-    &__blog {
-    }
-
-    &__title {
-    }
-
     &__list {
-    }
-
-    &__item {
-    }
-
-    &__subtitle {
-    }
-
-    &__adress {
-    }
-
-    &__text {
-    }
-
-    &__phone {
+      padding-top: 10px;
     }
 
     &__application {
-    }
-
-    &__form {
-    }
-
-    &__label {
+      padding: 40px;
     }
 
     &__input {
-    }
-
-    &__btn {
+      height: 65px;
     }
   }
   .footer {
     &__box {
       flex-direction: column;
       gap: 15px;
+    }
+
+    &__logo {
+      max-width: 150px;
     }
   }
 }
