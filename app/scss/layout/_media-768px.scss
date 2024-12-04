@@ -122,7 +122,6 @@
     }
   }
   .slider {
-
     &__list {
       margin-bottom: 50px;
     }
@@ -180,15 +179,8 @@
   }
   .footer {
     &__box {
-    }
-
-    &__logo {
-    }
-
-    &__social {
-    }
-
-    &__link {
+      flex-direction: column;
+      gap: 15px;
     }
   }
 }

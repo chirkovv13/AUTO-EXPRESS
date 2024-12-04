@@ -12,16 +12,11 @@
     }
   }
   .social {
-    &__img {
-      width: 18px;
-      height: 18px;
-    }
   }
 
   .header {
     margin-bottom: 50px;
-
-    min-height: 440px;
+    min-height: auto;
 
     &__top {
       margin-bottom: 15px;
@@ -53,10 +48,13 @@
       margin-bottom: 20px;
     }
 
+    &__social {
+      margin-bottom: 25px;
+      padding: 15px 0;
+    }
+
     &__img {
-      right: 10px;
-      bottom: -30px;
-      max-height: 130px;
+      display: none;
     }
   }
 
@@ -143,19 +141,6 @@
     }
 
     &__btn {
-    }
-  }
-  .footer {
-    &__box {
-    }
-
-    &__logo {
-    }
-
-    &__social {
-    }
-
-    &__link {
     }
   }
 }
