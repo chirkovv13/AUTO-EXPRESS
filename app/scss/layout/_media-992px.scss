@@ -28,106 +28,88 @@
     }
   }
   .about {
-    &__wrapper {
-    }
-
     &__img {
-    }
-
-    &__box {
+      max-width: 250px;
+      margin-right: 30px;
     }
 
     &__title {
+      padding-left: 75px;
     }
 
     &__list {
-    }
-
-    &__item {
+      padding-left: 75px;
     }
 
     &__value {
-    }
-
-    &__subtitle {
+      font-size: 30px;
     }
 
     &__text {
+      margin-bottom: 20px;
     }
   }
   .slider {
+    margin-bottom: 75px;
+
     &__title {
+      margin-bottom: 25px;
     }
 
     &__list {
+      padding-bottom: 30px;
+
+      .slick-track {
+        display: flex;
+        gap: 5px;
+      }
     }
 
     &__item {
+      margin: auto;
+      padding: 0;
     }
 
     &__img {
+      max-width: none;
     }
 
     &__name {
+      padding: 0 5px;
+      text-align: center;
     }
 
     &__sale {
+      padding: 0 5px;
+      text-align: center;
     }
   }
   .contacts {
     &__wrapper {
+      flex-direction: column;
     }
 
     &__blog {
-    }
-
-    &__title {
+      padding: 0;
     }
 
     &__list {
-    }
-
-    &__item {
-    }
-
-    &__subtitle {
-    }
-
-    &__adress {
-    }
-
-    &__text {
-    }
-
-    &__phone {
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
     }
 
     &__application {
+      align-self: center;
+      margin-bottom: 15px;
     }
 
-    &__form {
-    }
-
-    &__label {
-    }
-
-    &__input {
+    &__label:last-child {
+      margin-bottom: 30px;
     }
 
     &__btn {
-    }
-  }
-  .footer {
-    &__box {
-    }
-
-    &__logo {
-    }
-
-    &__social {
-    }
-
-    &__link {
+      margin-bottom: 0;
     }
   }
 }

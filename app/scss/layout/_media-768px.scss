@@ -3,7 +3,9 @@
     font-size: 16px;
   }
   .logo {
-    max-width: 170px;
+    &__img {
+      max-width: 170px;
+    }
   }
   .title {
     font-size: 24px;
@@ -13,7 +15,7 @@
       top: 50%;
       right: -55px;
       width: 50px;
-      height: 1px;
+      height: 2px;
     }
   }
 
@@ -81,106 +83,82 @@
     }
   }
   .about {
+    margin-bottom: 75px;
+
     &__wrapper {
+      flex-direction: column-reverse;
+      align-items: center;
+      gap: 20px;
     }
 
     &__img {
-    }
-
-    &__box {
+      max-width: 200px;
+      margin: 0;
     }
 
     &__title {
+      margin-bottom: 25px;
+      padding: 0;
     }
 
     &__list {
+      padding: 25px;
     }
 
     &__item {
+      max-width: 100%;
     }
 
     &__value {
+      display: inline-block;
+      font-size: 22px;
     }
 
     &__subtitle {
+      display: inline-block;
+      font-size: 22px;
     }
 
     &__text {
+      margin-bottom: 10px;
     }
   }
   .slider {
-    &__title {
-    }
-
     &__list {
+      margin-bottom: 50px;
     }
 
     &__item {
+      font-size: 14px;
     }
 
     &__img {
-    }
-
-    &__name {
-    }
-
-    &__sale {
+      margin-bottom: 15px;
     }
   }
   .contacts {
-    &__wrapper {
-    }
-
-    &__blog {
-    }
-
-    &__title {
-    }
-
     &__list {
-    }
-
-    &__item {
-    }
-
-    &__subtitle {
-    }
-
-    &__adress {
-    }
-
-    &__text {
-    }
-
-    &__phone {
+      padding-top: 10px;
     }
 
     &__application {
-    }
-
-    &__form {
-    }
-
-    &__label {
+      padding: 40px;
     }
 
     &__input {
-    }
-
-    &__btn {
+      height: 65px;
     }
   }
   .footer {
     &__box {
+      flex-direction: column;
+      gap: 15px;
     }
 
     &__logo {
-    }
-
-    &__social {
-    }
-
-    &__link {
+      .logo__img {
+        max-width: 150px;
+      }
     }
   }
 }

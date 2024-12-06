@@ -63,9 +63,9 @@ const path           = {
   },
 
   img: {
-    src:     pathSrc + "/images/**/*.{png,jpg,jpeg,gif}",
+    src:     pathSrc + "/images/**/*.{png,jpg,jpeg,gif,ico}",
     app:     pathSrc + "/images",
-    watch:   pathSrc + "/images/**/*.{png,jpg,jpeg,gif}",
+    watch:   pathSrc + "/images/**/*.{png,jpg,jpeg,gif,ico}",
     // webp:    pathSrc + "/images/**/*.webp",
     sprite:  pathSrc + "/images/sprite.svg",
     svg:    [pathSrc + "/images/**/*.svg", "!app/images/sprite.svg"],
